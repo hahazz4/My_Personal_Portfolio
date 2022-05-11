@@ -1,0 +1,126 @@
+/* Body Styles */
+
+html,body{
+    background-color: black;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; 
+}
+
+/* Navigation Bar Styles */
+#navBarStyle{
+    color:white;
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+    text-decoration: none;
+}
+
+/* #navBarStyle:hover{
+    background-color: white;
+    padding: 1rem, 1rem, 1rem, 1rem;
+    color:black;
+    margin-right: 2.5rem;
+    text-decoration: none;
+} */
+
+#navLinkStyles{
+    color:white;
+    margin-right: 2.5rem;
+    padding: 2rem, 2rem;
+    text-decoration: none;
+    transition: 0.25s;
+}
+
+#navLinkStyles:hover{
+    background-color: white;
+    color:black;
+    margin-right: 2.5rem;
+    text-decoration: none;
+}
+
+.navbar-right{
+    margin-left: 44rem;
+}
+
+#navSocialStyles{
+    margin-right: 1rem;
+    margin-left: 7.5rem;
+    color:white;
+    font-size: 2rem;
+}
+
+#navSocialStylesEmail{
+    margin-right: 1rem;
+    margin-left: 7.5rem;
+    padding: 0;
+    color:white;
+    font-size: 2rem;
+}
+
+/* Intro Container Style */
+
+#introContainer{
+    margin-top: 3rem;
+    margin-bottom: 7rem;
+}
+
+#introPara{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+#resumeLink{
+    padding: 0.25rem;
+    background-color: black;
+    color:white;
+    margin-left: 51rem;
+    text-decoration: none;
+    transition: 0.25s;
+}
+
+#resumeLink:hover{
+    padding: 0.25rem;
+    background-color: white;
+    color:black;
+    margin-right: 2.5rem;
+    text-decoration: none;
+}
+
+/* About Me Styles */
+#mainTStyle{
+    /* margin-left: 8rem; */
+}
+
+#mainHStyle{
+    margin-left: 8rem;
+}
+
+#aboutPara{
+    font-size: 1.5rem;
+    margin-left: 8rem;
+}
+
+#myImg{
+    height: 30rem;
+    width: auto;
+}
+
+/* My Projects Styles */
+
+#projectCardButton{
+    border-color: white;
+    padding: 0.25rem;
+    background-color: black;
+    color:white;
+    text-decoration: none;
+    transition: 0.25s;
+}
+
+#projectCardButton:hover{
+    padding: 0.25rem;
+    background-color: white;
+    color:black;
+    text-decoration: none;
+    transition: 0.25s;
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset = "UTF-8">
+    <meta http-equiv = "X-UA-Compatible" content = "IE=edge">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    <title>Zeerak's Website</title>
+
+    <link href = "/public/css/bootstrap.min.css" rel = "stylesheet" type = "text/css">
+    <link rel = "stylesheet" href = "/public/css/styles.css">
+    <link rel = "preconnect" href = "https://fonts.googleapis.com">
+    <link rel = "preconnect" href = "https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/abe28ba608.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Top Navigation Bar -->
+    <nav class = "navbar border-black navbar-expand-small navbar-expand-md navbar-expand-lg navbar-black">
+        <div class = "container-fluid container-fluid bg-black text-white">
+          <a id = "navBarStyle" class = "navbar-top" href = "index.html">Zeerak.A</a>
+
+          <div class = "collapse navbar-collapse" id = "navbarNavAltMarkup">
+            <!-- Left Side Nav -->
+            <div class="navbar-nav">
+              <a id = "navLinkStyles" class = "nav-link active" aria-current = "page" href = "index.html">Home</a>
+              <a id = "navLinkStyles" class = "nav-link" href = "#mainTStyle">About Me</a>
+              <a id = "navLinkStyles" class = "nav-link" href = "#">My Projects</a>
+              <a id = "navLinkStyles" class = "nav-link" href = "#">Contact Me</a>
+            </div>
+
+            <!-- Right Side Nav -->
+            <div class="navbar-right">
+                <a href = "mailto:Z_zee09@hotmail.com"><i id = "navSocialStylesEmail" class="fa-solid fa-square-envelope"></i></a>
+                <a href = "https://github.com/hahazz4"><i id = "navSocialStylesGit" class="fa-brands fa-github"></i></a>
+                <a href = "https://www.linkedin.com/in/zeerak-asim-7a62101b9/"><i id = "navSocialStylesL" class="fa-brands fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+    </nav>
+    
+    <!-- Main Body Container -->
+    <div class = "container-fluid bg-black text-white">
+        <!-- <div id = "introContainer" class = "container-fluid bg-white text-black"> -->
+        <div id = "introContainer" class = "container-fluid">
+            <!--Intro Portion-->
+            <h1 id = "mainTStyle" class = "text-center"></h1>
+            <p id = "introPara" class = "text-center">Welcome to my website! Here you can find information on who I am, my skills and my projects.</p>
+            <p id = "introPara" class = "text-center">You can view my resume by clicking the button below, I wish you a good day!</p>
+            <a id = "resumeLink" href = "/documents/Zeerak Resume 2022.pdf">Click Here to View Zeerak's Resume Here!</a>
+        </div>
+        
+        <!-- About Me Container -->
+        <div class = "container-fluid">
+            <div class = "row align-items-start">
+                
+                <!-- About Me Text -->
+                <div class = "col">
+                    <div class = "container-fluid">
+                        <h1 id = "mainHStyle" class = "text-center">About Me</h1>
+                        <p id = "aboutPara" class = "text-center">I am a 3rd year Computer Engineering student looking forward to specialize in software. 
+                            I currently attend Queen's University.
+                        </p>
+                        <p id = "aboutPara" class = "text-center">An interesting fact about me is that I was born in Melbourne, Australia and had moved to 
+                            Canada when I was three.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- About Me Image -->
+                <div class = "col">
+                    <div class = "container-fluid text-center">
+                        <img id = "myImg" src = "/images/pfp pic.jpg" alt = "A Picture of me, Zeerak Asim."></img>
+                    </div>
+                </div>  
+            </div>
+        </div>
+
+        <!-- My Projects Container -->
+        <div class = "container-fluid text-center">
+            <h1 id = "mainPStyle" class = "text-center">My Projects</h1>
+            <div id = "projectCards" class = "card bg-black text-white border-white" style = "width: 18rem;">
+                <img src = "/images/experimenting portfolio mockup 2021.png" class = "card-img-top" alt = "Picture of the beginning portion of the website.">
+                <div class = "card-body">
+                  <h5 class = "card-title">Experimental Portfolio Prototype</h5>
+                  <p class ="card-text">I created this website, using HTML and CSS. Overall probably one of the best I experimented with.</p>
+                  <a href = "https://github.com/hahazz4/Best_Website_I_Created" id = "projectCardButton">Visit Repository</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
