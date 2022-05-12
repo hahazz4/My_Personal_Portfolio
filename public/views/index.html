@@ -10,7 +10,7 @@
     <link rel = "stylesheet" href = "/public/css/styles.css">
     <link rel = "preconnect" href = "https://fonts.googleapis.com">
     <link rel = "preconnect" href = "https://fonts.gstatic.com" crossorigin>
-    <script src="https://kit.fontawesome.com/abe28ba608.js" crossorigin="anonymous"></script>
+    <script src = "https://kit.fontawesome.com/abe28ba608.js" crossorigin = "anonymous"></script>
 </head>
 
 <body>
@@ -21,15 +21,15 @@
 
           <div class = "collapse navbar-collapse" id = "navbarNavAltMarkup">
             <!-- Left Side Nav -->
-            <div class="navbar-nav">
+            <div id = "leftNavStyles" class="navbar-nav">
               <a id = "navLinkStyles" class = "nav-link active" aria-current = "page" href = "index.html">Home</a>
               <a id = "navLinkStyles" class = "nav-link" href = "#mainTStyle">About Me</a>
-              <a id = "navLinkStyles" class = "nav-link" href = "#">My Projects</a>
-              <a id = "navLinkStyles" class = "nav-link" href = "#">Contact Me</a>
+              <a id = "navLinkStyles" class = "nav-link" href = "#mainPStyle">My Projects</a>
+              <a id = "navLinkStyles" class = "nav-link" href = "#mainCStyle">Contact Me</a>
             </div>
 
             <!-- Right Side Nav -->
-            <div class="navbar-right">
+            <div id = "rightNavStyles" class="navbar-right">
                 <a href = "mailto:Z_zee09@hotmail.com"><i id = "navSocialStylesEmail" class="fa-solid fa-square-envelope"></i></a>
                 <a href = "https://github.com/hahazz4"><i id = "navSocialStylesGit" class="fa-brands fa-github"></i></a>
                 <a href = "https://www.linkedin.com/in/zeerak-asim-7a62101b9/"><i id = "navSocialStylesL" class="fa-brands fa-linkedin"></i></a>
@@ -43,10 +43,10 @@
         <!-- <div id = "introContainer" class = "container-fluid bg-white text-black"> -->
         <div id = "introContainer" class = "container-fluid">
             <!--Intro Portion-->
-            <h1 id = "mainTStyle" class = "text-center"></h1>
+            <h1 id = "mainTStyle" class = "text-center">Hi my name is Zeerak Asim.</h1>
             <p id = "introPara" class = "text-center">Welcome to my website! Here you can find information on who I am, my skills and my projects.</p>
             <p id = "introPara" class = "text-center">You can view my resume by clicking the button below, I wish you a good day!</p>
-            <a id = "resumeLink" href = "/documents/Zeerak Resume 2022.pdf">Click Here to View Zeerak's Resume Here!</a>
+            <center><a id = "normalButton" href = "/documents/Zeerak Resume 2022.pdf">Click Here to View Zeerak's Resume Here!</a></center>
         </div>
         
         <!-- About Me Container -->
@@ -78,14 +78,69 @@
         <!-- My Projects Container -->
         <div class = "container-fluid text-center">
             <h1 id = "mainPStyle" class = "text-center">My Projects</h1>
-            <div id = "projectCards" class = "card bg-black text-white border-white" style = "width: 18rem;">
-                <img src = "/images/experimenting portfolio mockup 2021.png" class = "card-img-top" alt = "Picture of the beginning portion of the website.">
-                <div class = "card-body">
-                  <h5 class = "card-title">Experimental Portfolio Prototype</h5>
-                  <p class ="card-text">I created this website, using HTML and CSS. Overall probably one of the best I experimented with.</p>
-                  <a href = "https://github.com/hahazz4/Best_Website_I_Created" id = "projectCardButton">Visit Repository</a>
+            
+            <div class = "row">
+                <div id = "projectCards" class = "card bg-black text-white border-white" style = "width: 18rem;">
+                    <img src = "/images/experimenting portfolio mockup 2021.png" class = "card-img-top" alt = "Picture of the beginning portion of the website.">
+                    <div class = "card-body">
+                        <h5 class = "card-title">Experimental Portfolio Prototype</h5>
+                        <p class = "card-text">I created this website, using HTML and CSS. Overall probably one of the best I experimented with.</p>
+                        <a href = "https://github.com/hahazz4/Best_Website_I_Created" id = "normalButton">Visit Repository</a>
+                    </div>
+                </div>
+
+                <div id = "projectCards" class = "card bg-black text-white border-white" style = "width: 18rem;">
+                    <img src = "/images/experimenting portfolio mockup 2021.png" class = "card-img-top" alt = "Picture of the beginning portion of the website.">
+                    <div class = "card-body">
+                        <h5 class = "card-title">Todo List</h5>
+                        <p class = "card-text">A simple todo list web app made with, HTML, CSS, Bootstrap and powered by JavaScript console.</p>
+                        <a href = "https://github.com/hahazz4/Todo-List" id = "normalButton">Visit Repository</a>
+                    </div>
+                </div>
+
+                <div id = "projectCards" class = "card bg-black text-white border-white" style = "width: 18rem;">
+                    <img src = "/images/experimenting portfolio mockup 2021.png" class = "card-img-top" alt = "Picture of the beginning portion of the website.">
+                    <div class = "card-body">
+                        <h5 class = "card-title">QHDT Sensor APSC 103 Project</h5>
+                        <p class = "card-text">Arduino script for pressure transducer and temperature sensor.</p>
+                        <a href = "https://github.com/hahazz4/qhdt_sensors" id = "normalButton">Visit Repository</a>
+                    </div>
+                </div>
+
+                <div id = "projectCards" class = "card bg-black text-white border-white" style = "width: 18rem;">
+                    <img src = "/images/experimenting portfolio mockup 2021.png" class = "card-img-top" alt = "Picture of the beginning portion of the website.">
+                    <div class = "card-body">
+                        <h5 class = "card-title">Fibonacci Term App</h5>
+                        <p class = "card-text">Fibonacci term algorithm that finds the number given the position of the term.</p>
+                        <a href = "https://github.com/hahazz4/fibonacci_term_gui" id = "normalButton">Visit Repository</a>
+                    </div>
                 </div>
             </div>
+
+            <!-- <div class = "row">
+                <div id = "projectCards" class = "card bg-black text-white border-white" style = "width: 18rem;">
+                    <img id = "projectImg" src = "/images/experimenting portfolio mockup 2021.png" class = "card-img-top" alt = "Picture of the beginning portion of the website.">
+                    <div class = "card-body">
+                        <h5 class = "card-title">Experimental Portfolio Prototype</h5>
+                        <p class = "card-text">I created this website, using HTML and CSS. Overall probably one of the best I experimented with.</p>
+                        <a href = "https://github.com/hahazz4/Best_Website_I_Created" id = "projectCardButton">Visit Repository</a>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+
+        <!-- Contact Me Container -->
+        <div class = "container-fluid text-center">
+            <h1 id = "mainCStyle" class = "text-center">Contact Me</h1>
+            <p>Hey, you can feel free to reach out or ask any questions to me by clicking the button below.</p>
+            <a id = "normalButton" class = "btn" href = "mailto:Z_zee09@hotmail.com">Contact Me Here!</a></p>
+        </div>
+
+        <!-- Footer Container -->
+        <div id = "footerStyle" class = "container-fluid text-center">
+            <a class="footer-linkL" href="https://www.linkedin.com/in/zeerak-asim-7a62101b9/">LinkedIn</a>
+            <a class="footer-linkG" href="https://github.com/hahazz4">Github</a>
+            <b><p>© 2022 Zeerak Asim.</p></b>
         </div>
     </div>
 </body>

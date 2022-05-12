@@ -8,6 +8,26 @@ html,body{
     overflow-x: hidden; 
 }
 
+#normalButton{
+    border-style: solid;
+    border-color: white;
+    padding: 0.5rem;
+    background-color: black;
+    color:white;
+    text-decoration: none;
+    transition: 0.25s;
+}
+
+#normalButton:hover{
+    border-style: solid;
+    border-color: white;
+    padding: 0.5rem;
+    background-color: white;
+    color:black;
+    text-decoration: none;
+    transition: 0.25s;
+}
+
 /* Navigation Bar Styles */
 #navBarStyle{
     color:white;
@@ -16,47 +36,60 @@ html,body{
     text-decoration: none;
 }
 
-/* #navBarStyle:hover{
-    background-color: white;
-    padding: 1rem, 1rem, 1rem, 1rem;
-    color:black;
-    margin-right: 2.5rem;
-    text-decoration: none;
-} */
+#leftNavStyles{
+    float: left;
+}
+
+#rightNavStyles{
+    float: right;
+}
 
 #navLinkStyles{
     color:white;
     margin-right: 2.5rem;
-    padding: 2rem, 2rem;
+    padding: 2.5rem, 2.5rem;
     text-decoration: none;
     transition: 0.25s;
 }
 
 #navLinkStyles:hover{
+    padding: 2.5rem, 2.5rem;
     background-color: white;
     color:black;
     margin-right: 2.5rem;
     text-decoration: none;
 }
 
-.navbar-right{
-    margin-left: 44rem;
-}
-
-#navSocialStyles{
+/* #navSocialStyles{
     margin-right: 1rem;
     margin-left: 7.5rem;
     color:white;
     font-size: 2rem;
-}
+} */
 
-#navSocialStylesEmail{
+/* #navSocialStylesEmail{
     margin-right: 1rem;
     margin-left: 7.5rem;
     padding: 0;
     color:white;
     font-size: 2rem;
 }
+
+#navSocialStylesGit{
+    margin-right: 1rem;
+    margin-left: 7.5rem;
+    padding: 0;
+    color:white;
+    font-size: 2rem;
+}
+
+#navSocialStylesL{
+    margin-right: 1rem;
+    margin-left: 7.5rem;
+    padding: 0;
+    color:white;
+    font-size: 2rem;
+} */
 
 /* Intro Container Style */
 
@@ -108,9 +141,17 @@ html,body{
 
 /* My Projects Styles */
 
-#projectCardButton{
+#projectCards{
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+#projectCardnormalButton{
+    border-style: solid;
     border-color: white;
-    padding: 0.25rem;
+    padding: 0.5rem;
     background-color: black;
     color:white;
     text-decoration: none;
@@ -123,4 +164,47 @@ html,body{
     color:black;
     text-decoration: none;
     transition: 0.25s;
+}
+
+#projectImg{
+    width: auto;
+}
+
+/* Footer Styles */
+
+#footerStyle{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: white;
+    color: black;
+}
+
+.footer-linkL{
+    margin-right: 20px;
+    text-decoration: none;
+    padding: 2px 2px 2px 2px;
+    border-style: solid;
+    border-color: black;
+}
+
+.footer-linkL:hover{
+    border: 1px solid black;
+    background: black;
+    transition: 0.2s;
+    color:white;
+}
+
+.footer-linkG{
+    text-decoration: none;
+    padding: 2px 2px 2px 2px;
+    background-color: white;
+    border-style: solid;
+    border-color: black;
+}
+
+.footer-linkG:hover{
+    border: 1px solid black;
+    background: black;
+    transition: 0.2s;
+    color:white;
 }
