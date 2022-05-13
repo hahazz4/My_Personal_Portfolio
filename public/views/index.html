@@ -36,17 +36,17 @@
             </div>
           </div>
         </div>
-    </nav>
+    </nav><hr id = "navBarLine">
     
     <!-- Main Body Container -->
     <div class = "container-fluid bg-black text-white">
         <!-- <div id = "introContainer" class = "container-fluid bg-white text-black"> -->
         <div id = "introContainer" class = "container-fluid">
             <!--Intro Portion-->
-            <h1 id = "mainTStyle" class = "text-center">Hi my name is Zeerak Asim.</h1>
+            <h1 id = "mainTStyle" class = "text-center">Hi my name is Zeerak Asim.</h1><br>
             <p id = "introPara" class = "text-center">Welcome to my website! Here you can find information on who I am, my skills and my projects.</p>
             <p id = "introPara" class = "text-center">You can view my resume by clicking the button below, I wish you a good day!</p>
-            <center><a id = "normalButton" href = "/documents/Zeerak Resume 2022.pdf">Click Here to View Zeerak's Resume Here!</a></center>
+            <br><center><a id = "normalButton" href = "/documents/Zeerak Resume 2022.pdf">Click Here to View Zeerak's Resume Here!</a></center>
         </div>
         
         <!-- About Me Container -->
@@ -60,6 +60,16 @@
                         <p id = "aboutPara" class = "text-center">I am a 3rd year Computer Engineering student looking forward to specialize in software. 
                             I currently attend Queen's University.
                         </p>
+
+                        <p id = "aboutPara" class = "text-center">I like programming web applications, programming projects, games, 
+                            and different areas of software.
+                        </p>
+
+                        <p id = "aboutPara" class = "text-center">My passion with computers and software appeared when I was a toddler. I would turn my
+                            computer on and would browse the internet for games. I always had a curiosity about how, and what
+                            exactly are computers. How these various software were programmed and accessible through these man made machines. 
+                        </p>
+
                         <p id = "aboutPara" class = "text-center">An interesting fact about me is that I was born in Melbourne, Australia and had moved to 
                             Canada when I was three.
                         </p>
@@ -76,7 +86,7 @@
         </div>
 
         <!-- My Projects Container -->
-        <div class = "container-fluid text-center">
+        <div id = "projectContainer" class = "container-fluid text-center">
             <h1 id = "mainPStyle" class = "text-center">My Projects</h1>
             
             <div class = "row">
@@ -85,7 +95,7 @@
                     <div class = "card-body">
                         <h5 class = "card-title">Experimental Portfolio Prototype</h5>
                         <p class = "card-text">I created this website, using HTML and CSS. Overall probably one of the best I experimented with.</p>
-                        <a href = "https://github.com/hahazz4/Best_Website_I_Created" id = "normalButton">Visit Repository</a>
+                        <a href = "https://github.com/hahazz4/Best_Website_I_Created" id = "normalCardButtons">Visit Repository</a>
                     </div>
                 </div>
 
@@ -94,7 +104,7 @@
                     <div class = "card-body">
                         <h5 class = "card-title">Todo List</h5>
                         <p class = "card-text">A simple todo list web app made with, HTML, CSS, Bootstrap and powered by JavaScript console.</p>
-                        <a href = "https://github.com/hahazz4/Todo-List" id = "normalButton">Visit Repository</a>
+                        <a href = "https://github.com/hahazz4/Todo-List" id = "normalCardButtons">Visit Repository</a>
                     </div>
                 </div>
 
@@ -103,7 +113,7 @@
                     <div class = "card-body">
                         <h5 class = "card-title">QHDT Sensor APSC 103 Project</h5>
                         <p class = "card-text">Arduino script for pressure transducer and temperature sensor.</p>
-                        <a href = "https://github.com/hahazz4/qhdt_sensors" id = "normalButton">Visit Repository</a>
+                        <a href = "https://github.com/hahazz4/qhdt_sensors" id = "normalCardButtons">Visit Repository</a>
                     </div>
                 </div>
 
@@ -112,7 +122,7 @@
                     <div class = "card-body">
                         <h5 class = "card-title">Fibonacci Term App</h5>
                         <p class = "card-text">Fibonacci term algorithm that finds the number given the position of the term.</p>
-                        <a href = "https://github.com/hahazz4/fibonacci_term_gui" id = "normalButton">Visit Repository</a>
+                        <a href = "https://github.com/hahazz4/fibonacci_term_gui" id = "normalCardButtons">Visit Repository</a>
                     </div>
                 </div>
             </div>
@@ -138,9 +148,10 @@
 
         <!-- Footer Container -->
         <div id = "footerStyle" class = "container-fluid text-center">
-            <a class="footer-linkL" href="https://www.linkedin.com/in/zeerak-asim-7a62101b9/">LinkedIn</a>
-            <a class="footer-linkG" href="https://github.com/hahazz4">Github</a>
-            <b><p>© 2022 Zeerak Asim.</p></b>
+            <a id = "footer-linkL" class = "btn" href="https://www.linkedin.com/in/zeerak-asim-7a62101b9/">LinkedIn</a>
+            <a id = "footer-linkG" class = "btn" href="https://github.com/hahazz4">Github</a>
+            <br><br>
+            <p>© 2022 Zeerak Asim.</p>
         </div>
     </div>
 </body>
