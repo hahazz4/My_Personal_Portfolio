@@ -8,9 +8,11 @@
 
     <link href = "/public/css/bootstrap.min.css" rel = "stylesheet" type = "text/css">
     <link rel = "stylesheet" href = "/public/css/styles.css">
-    <link rel = "preconnect" href = "https://fonts.googleapis.com">
-    <link rel = "preconnect" href = "https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Mukta:wght@200&family=Roboto:wght@300&display=swap" rel="stylesheet">
     <script src = "https://kit.fontawesome.com/abe28ba608.js" crossorigin = "anonymous"></script>
+    <script src = "/public/javascript/typeEffectScript.js"></script>
 </head>
 
 <body>
@@ -43,7 +45,6 @@
             </div>
         </div>
     </nav>
-    <!-- <hr id = "navBarLine"> -->
     
     <!-- Main Body Container -->
     <div class = "container-fluid bg-black text-white">
@@ -51,8 +52,8 @@
         <div id = "introContainer" class = "container-fluid">
             <!--Intro Portion-->
             <h1 id = "mainTStyle" class = "text-center"></h1><br>
-            <p id = "introPara" class = "text-center">Welcome to my website! Here you can find information on who I am, my skills and my projects.</p>
-            <p id = "introPara" class = "text-center">You can view my resume by clicking the button below, I wish you a good day!</p>
+            <p id = "introPara1" class = "text-center"></p>
+            <p id = "introPara2" class = "text-center"></p>
             <br><center><a id = "normalButton" href = "/documents/Zeerak Resume 2022.pdf">Click Here to View Zeerak's Resume Here!</a></center>
         </div>
         
@@ -61,18 +62,18 @@
             <div class = "row align-items-start">
                 
                 <!-- About Me Text -->
-                <div class = "col">
-                    <div class = "container-fluid">
+                <div class = "col container-fluid">
+                    <div id = "aboutMeStyles" class = "container-fluid">
                         <h1 id = "mainHStyle" class = "text-center">About Me</h1>
                         <p id = "aboutPara" class = "text-center">I am a 3rd year Computer Engineering student looking forward to specialize in software. 
                             I currently attend Queen's University.
                         </p>
 
-                        <p id = "aboutPara" class = "text-center">I like programming web applications, programming projects, games, 
-                            and different areas of software.
+                        <p id = "aboutPara" class = "text-center">I like programming web applications, algorithms, games, 
+                            and love exploring different areas of software.
                         </p>
 
-                        <p id = "aboutPara" class = "text-center">My passion with computers and software appeared when I was a toddler. I would turn my
+                        <p id = "aboutPara" class = "text-center">My passion with computers and software occured when I was a toddler. I would turn my
                             computer on and would browse the internet for games. I always had a curiosity about how, and what
                             exactly are computers. How these various software were programmed and accessible through these man made machines. 
                         </p>
@@ -84,7 +85,7 @@
                 </div>
 
                 <!-- About Me Image -->
-                <div class = "col">
+                <div class = "col container-fluid">
                     <div class = "container-fluid text-center">
                         <img id = "myImg" src = "/images/pfp pic.jpg" alt = "A Picture of me, Zeerak Asim."></img>
                     </div>

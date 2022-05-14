@@ -1,3 +1,10 @@
+/* Font Families Used */
+/* 
+font-family: 'Cedarville Cursive', cursive;
+font-family: 'Mukta', sans-serif;
+font-family: 'Roboto', sans-serif; 
+*/
+
 /* Body Styles */
 
 html,body{
@@ -9,6 +16,7 @@ html,body{
 }
 
 #normalButton{
+    font-family: 'Roboto', sans-serif; 
     border-style: solid;
     border-color: white;
     padding: 0.5rem;
@@ -19,6 +27,7 @@ html,body{
 }
 
 #normalButton:hover{
+    font-family: 'Roboto', sans-serif; 
     border-style: solid;
     border-color: white;
     padding: 0.5rem;
@@ -30,6 +39,8 @@ html,body{
 
 /* Navigation Bar Styles */
 #navBarStyle{
+    font-family: 'Cedarville Cursive', 'cursive';
+    font-size: 2.3rem;
     color:black;
     margin-left: 2.5rem;
     margin-right: 2.5rem;
@@ -48,22 +59,18 @@ html,body{
     float: right;
 }
 
-#navBarLine{
-    border-color: white;
-    border: 0.15rem solid white;
-}
-
 #navLinkStyles{
+    font-family: 'Roboto', sans-serif; 
+    font-size: 1.5rem;
     color:black;
     margin-right: 2.5rem;
     padding: 2.5rem, 2.5rem;
-    border-style: solid;
-    border-color: black;
     text-decoration: none;
     transition: 0.25s;
 }
 
 #navLinkStyles:hover{
+    font-family: 'Roboto', sans-serif; 
     padding: 2.5rem, 2.5rem;
     background-color: black;
     color:white;
@@ -84,14 +91,31 @@ html,body{
     font-size: 3rem;
 }
 
+#navSocialStylesEmail:hover{
+    color:green;
+    margin-right: 2rem;
+    font-size: 3rem;
+}
+
 #navSocialStylesGit{
     color:black;
     margin-right: 2rem;
     font-size: 3rem;
 }
 
+#navSocialStylesGit:hover{
+    color:#171515;
+    margin-right: 2rem;
+    font-size: 3rem;
+}
+
 #navSocialStylesL{
     color: black;
+    font-size: 3rem;
+}
+
+#navSocialStylesL:hover{
+    color: #0077b5;
     font-size: 3rem;
 }
 
@@ -102,7 +126,14 @@ html,body{
     margin-bottom: 7rem;
 }
 
-#introPara{
+#introPara1{
+    font-family: 'Mukta', sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+#introPara2{
+    font-family: 'Mukta', sans-serif;
     font-size: 1.5rem;
     font-weight: bold;
 }
@@ -126,15 +157,17 @@ html,body{
 
 /* About Me Styles */
 #mainTStyle{
-    /* margin-left: 8rem; */
+    font-family: 'Mukta', sans-serif;
 }
 
 #mainHStyle{
+    font-family: 'Mukta', sans-serif;
     margin-left: 8rem;
 }
 
 #aboutPara{
-    font-size: 1.2rem;
+    font-family: 'Roboto', sans-serif; 
+    font-size: 1.3rem;
     margin-left: 8rem;
 }
 
@@ -184,7 +217,7 @@ html,body{
 }
 
 #mainPStyle{
-    /* margin-top: 3.5rem; */
+    font-family: 'Mukta', sans-serif;
     padding-top: 2.5rem;
 }
 
@@ -194,7 +227,12 @@ html,body{
 
 /* Footer Styles */
 
+#mainCStyle{
+    font-family: 'Mukta', sans-serif;
+}
+
 #footerStyle{
+    font-family: 'Roboto', sans-serif; 
     padding-top: 1rem;
     padding-bottom: 1rem;
     background-color: black;
