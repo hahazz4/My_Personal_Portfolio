@@ -15,35 +15,42 @@
 
 <body>
     <!-- Top Navigation Bar -->
-    <nav class = "navbar border-black navbar-expand-small navbar-expand-md navbar-expand-lg navbar-black">
-        <div class = "container-fluid container-fluid bg-black text-white">
-          <a id = "navBarStyle" class = "navbar-top" href = "index.html">Zeerak.A</a>
+    <nav class = "navbar border-black navbar-expand-small navbar-expand-md navbar-expand-lg navbar-black bg-white text-black">
+        <div class = "container-fluid container-fluid bg-white text-black">
+            <a id = "navBarStyle" class = "navbar-top" href = "index.html">Zeerak.A</a>
 
-          <div class = "collapse navbar-collapse" id = "navbarNavAltMarkup">
-            <!-- Left Side Nav -->
-            <div id = "leftNavStyles" class="navbar-nav">
-              <a id = "navLinkStyles" class = "nav-link active" aria-current = "page" href = "index.html">Home</a>
-              <a id = "navLinkStyles" class = "nav-link" href = "#mainTStyle">About Me</a>
-              <a id = "navLinkStyles" class = "nav-link" href = "#mainPStyle">My Projects</a>
-              <a id = "navLinkStyles" class = "nav-link" href = "#mainCStyle">Contact Me</a>
-            </div>
+            <div class = "row container-fluid">
+                <!-- Left Side Nav -->
+                <div class = "col">
+                    <div class = "collapse navbar-collapse" id = "navbarNavAltMarkup">
+                        <div id = "leftNavStyles" class="navbar-nav">
+                            <a id = "navLinkStyles" class = "nav-link active" aria-current = "page" href = "index.html">Home</a>
+                            <a id = "navLinkStyles" class = "nav-link" href = "#mainTStyle">About Me</a>
+                            <a id = "navLinkStyles" class = "nav-link" href = "#mainPStyle">My Projects</a>
+                            <a id = "navLinkStyles" class = "nav-link" href = "#mainCStyle">Contact Me</a>
+                        </div>
+                    </div>
+                </div>
 
-            <!-- Right Side Nav -->
-            <div id = "rightNavStyles" class="navbar-right">
-                <a href = "mailto:Z_zee09@hotmail.com"><i id = "navSocialStylesEmail" class="fa-solid fa-square-envelope"></i></a>
-                <a href = "https://github.com/hahazz4"><i id = "navSocialStylesGit" class="fa-brands fa-github"></i></a>
-                <a href = "https://www.linkedin.com/in/zeerak-asim-7a62101b9/"><i id = "navSocialStylesL" class="fa-brands fa-linkedin"></i></a>
+                <!-- Right Side Nav -->
+                <div class = "col container-fluid">
+                    <div id = "rightNavStyles" class="navbar-right">
+                        <a href = "mailto:Z_zee09@hotmail.com"><i id = "navSocialStylesEmail" class="fa-solid fa-square-envelope"></i></a>
+                        <a href = "https://github.com/hahazz4"><i id = "navSocialStylesGit" class="fa-brands fa-github"></i></a>
+                        <a href = "https://www.linkedin.com/in/zeerak-asim-7a62101b9/"><i id = "navSocialStylesL" class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-    </nav><hr id = "navBarLine">
+    </nav>
+    <!-- <hr id = "navBarLine"> -->
     
     <!-- Main Body Container -->
     <div class = "container-fluid bg-black text-white">
         <!-- <div id = "introContainer" class = "container-fluid bg-white text-black"> -->
         <div id = "introContainer" class = "container-fluid">
             <!--Intro Portion-->
-            <h1 id = "mainTStyle" class = "text-center">Hi my name is Zeerak Asim.</h1><br>
+            <h1 id = "mainTStyle" class = "text-center"></h1><br>
             <p id = "introPara" class = "text-center">Welcome to my website! Here you can find information on who I am, my skills and my projects.</p>
             <p id = "introPara" class = "text-center">You can view my resume by clicking the button below, I wish you a good day!</p>
             <br><center><a id = "normalButton" href = "/documents/Zeerak Resume 2022.pdf">Click Here to View Zeerak's Resume Here!</a></center>
@@ -88,7 +95,6 @@
         <!-- My Projects Container -->
         <div id = "projectContainer" class = "container-fluid text-center">
             <h1 id = "mainPStyle" class = "text-center">My Projects</h1>
-            
             <div class = "row">
                 <div id = "projectCards" class = "card bg-black text-white border-white" style = "width: 18rem;">
                     <img src = "/images/experimenting portfolio mockup 2021.png" class = "card-img-top" alt = "Picture of the beginning portion of the website.">
