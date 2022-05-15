@@ -7,8 +7,7 @@ font-family: 'Roboto', sans-serif;
 
 /* Body Styles */
 
-html,body{
-    background-color: black;
+html, body{
     height: 100%;
     margin: 0;
     padding: 0;
@@ -38,6 +37,7 @@ html,body{
 }
 
 /* Navigation Bar Styles */
+
 #navBarStyle{
     font-family: 'Cedarville Cursive', 'cursive';
     font-size: 2.3rem;
@@ -71,9 +71,9 @@ html,body{
 
 #navLinkStyles:hover{
     font-family: 'Roboto', sans-serif; 
-    padding: 2.5rem, 2.5rem;
-    background-color: black;
-    color:white;
+    padding: 1.5rem;
+    color:black;
+    border-bottom: 0.15rem solid black;
     margin-right: 2.5rem;
     text-decoration: none;
 }
@@ -122,7 +122,7 @@ html,body{
 /* Intro Container Style */
 
 #introContainer{
-    margin-top: 3rem;
+    padding-top: 3rem;
     margin-bottom: 7rem;
 }
 
@@ -138,24 +138,8 @@ html,body{
     font-weight: bold;
 }
 
-#resumeLink{
-    padding: 0.25rem;
-    background-color: black;
-    color:white;
-    margin-left: 51rem;
-    text-decoration: none;
-    transition: 0.25s;
-}
-
-#resumeLink:hover{
-    padding: 0.25rem;
-    background-color: white;
-    color:black;
-    margin-right: 2.5rem;
-    text-decoration: none;
-}
-
 /* About Me Styles */
+
 #mainTStyle{
     font-family: 'Mukta', sans-serif;
 }
@@ -191,9 +175,28 @@ html,body{
     margin-right: 1.5rem;
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
+    padding: .2rem;
     border-style: solid;
     border-color: black;
 }
+
+#projectCards .card-title{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.15rem;
+}
+
+#projectCards #projText{
+    font-family: 'Roboto', sans-serif;
+    color: transparent;
+    margin: 0;
+}
+
+#projectCards:hover #projText{
+    font-family: 'Roboto', sans-serif;
+    transition: 0.5s;
+    color: white;
+}
+
 
 #normalCardButtons{
     border-style: solid;
@@ -213,7 +216,6 @@ html,body{
     color:black;
     text-decoration: none;
     transition: 0.25s;
-    margin-top: 1.5rem;
 }
 
 #mainPStyle{
