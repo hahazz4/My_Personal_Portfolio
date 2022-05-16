@@ -119,6 +119,10 @@ html, body{
     font-size: 3rem;
 }
 
+#mainSStyle{
+    font-family: 'Mukta', sans-serif;
+}
+
 /* Intro Container Style */
 
 #introContainer{
