@@ -231,6 +231,21 @@ html, body{
     width: auto;
 }
 
+/* My Skills Styles */
+
+#mySkillsIcons{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-left: 2rem;
+    font-size: 2.5rem;
+    color: white;
+}
+
+#mySkillsPara{
+    margin-top: 1.5rem;
+    /* margin-left: 2.5rem; */
+}
+
 /* Footer Styles */
 
 #mainCStyle{
