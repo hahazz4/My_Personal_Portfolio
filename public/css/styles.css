@@ -164,17 +164,11 @@ html, body{
 }
 
 #myImg{
-    margin-top: 10rem;
+    margin-top: 5rem;
     height: 30rem;
     width: auto;
     border-radius: 10rem;
 }
-
-/* #aboutMeStyles{
-    background-color: white;
-    border: red 0.25rem solid;
-    color: black;
-} */
 
 /* My Projects Styles */
 
@@ -208,6 +202,8 @@ html, body{
 }
 
 #projectCards:hover #projText{
+    border-top: 0.01rem white solid;
+    border-bottom: 0.01rem white solid;
     font-family: 'Roboto', sans-serif;
     transition: 0.5s;
     color: white;
@@ -249,14 +245,6 @@ html, body{
     font-family: 'Mukta', sans-serif;
     padding-top: 5.5rem;
 }
-
-/* #mySkillsIcons{
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    margin-left: 2rem;
-    font-size: 2.5rem;
-    color: white;
-} */
 
 #devRowBorder{
     /* border: red solid 0.25rem; */
