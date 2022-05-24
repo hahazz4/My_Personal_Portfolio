@@ -170,6 +170,11 @@ html, body{
     border-radius: 10rem;
 }
 
+#myImg:hover{
+    transition: 0.75s;
+    border-radius: 0;
+}
+
 /* My Projects Styles */
 
 #projectContainer{
@@ -207,6 +212,11 @@ html, body{
     font-family: 'Roboto', sans-serif;
     transition: 0.5s;
     color: white;
+}
+
+#projectCards:hover{
+    transition: 0.5s;
+    box-shadow: 1rem 1rem rgba(0, 0, 0);
 }
 
 
