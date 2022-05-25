@@ -77,6 +77,7 @@ html, body{
     border-bottom: 0.15rem solid black;
     margin-right: 2.5rem;
     text-decoration: none;
+    transition: 0.25s;
 }
 
 #navSocialStyles{
@@ -158,9 +159,18 @@ html, body{
     font-family: 'Roboto', sans-serif; 
     font-size: 1.3rem;
     margin-left: 8rem;
+    background-color: white;
     color: black;
     padding: 1rem;
     border-radius: 0.5rem;
+}
+
+#aboutPara:hover{
+    transition: 0.25s;
+    border: solid 0.25rem white;
+    border-radius: 0;
+    background-color: black;
+    color: white;
 }
 
 #myImg{
@@ -173,6 +183,45 @@ html, body{
 #myImg:hover{
     transition: 0.75s;
     border-radius: 0;
+}
+
+/* My Skills Styles */
+
+#mainSStyle{
+    font-family: 'Mukta', sans-serif;
+    padding-top: 5.5rem;
+}
+
+#devRowBorder{
+    /* border: red solid 0.25rem; */
+    margin-bottom: 3rem;
+}
+
+#devColBorder{
+    /* border: greenyellow solid 0.25rem; */
+}
+
+#mySkillsIcons{
+    font-size: 3rem;
+    color: white;
+}
+
+#mySkillsIcons:hover{
+    font-size: 5rem;
+}
+
+#mySkillsParaH{
+    font-size: 2rem;
+    color: white;
+    border-bottom: solid 0.25rem white;
+}
+
+#mySkillsPara{
+    font-size: 1.5rem;
+}
+
+#mySkillsContainer{
+    margin-bottom: 3rem;
 }
 
 /* My Projects Styles */
@@ -247,41 +296,6 @@ html, body{
 
 #projectImg{
     width: auto;
-}
-
-/* My Skills Styles */
-
-#mainSStyle{
-    font-family: 'Mukta', sans-serif;
-    padding-top: 5.5rem;
-}
-
-#devRowBorder{
-    /* border: red solid 0.25rem; */
-    margin-bottom: 3rem;
-}
-
-#devColBorder{
-    /* border: greenyellow solid 0.25rem; */
-}
-
-#mySkillsIcons{
-    font-size: 2.5rem;
-    color: white;
-}
-
-#mySkillsParaH{
-    font-size: 2rem;
-    color: white;
-    border-bottom: solid 0.25rem white;
-}
-
-#mySkillsPara{
-    font-size: 1.5rem;
-}
-
-#mySkillsContainer{
-    margin-bottom: 3rem;
 }
 
 /* Footer Styles */
