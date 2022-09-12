@@ -1,8 +1,8 @@
 /* Font Families Used */
 /* 
-font-family: 'Cedarville Cursive', cursive;
-font-family: 'Mukta', sans-serif;
-font-family: 'Roboto', sans-serif; 
+    font-family: 'Cedarville Cursive', cursive;
+    font-family: 'Mukta', sans-serif;
+    font-family: 'Roboto', sans-serif; 
 */
 
 /* Body Styles */
@@ -245,6 +245,18 @@ html, body{
     margin-bottom: 3rem;
 }
 
+/* To Be Added Soon... */
+/* Experience Styles
+
+#mainEStyle{
+    font-family: 'Mukta', sans-serif;
+}
+
+#mainEPStyle{
+    font-family: 'Mukta', sans-serif;
+    margin-left: 20rem;
+} */
+
 /* My Projects Styles */
 
 #projectContainer{
@@ -479,5 +491,17 @@ html, body{
         font-size: 1rem;
     }
 
+    /* To Be Added Soon... */
+
+    /* Experience Styles
+    #mainEStyle{
+        font-family: 'Mukta', sans-serif;
+    }
+
+    #mainEPStyle{
+        font-family: 'Mukta', sans-serif;
+        font-size: 1.3rem;
+        margin-left: 1rem;
+    } */
 
 }
