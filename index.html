@@ -13,15 +13,23 @@
     <link href = "https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Mukta:wght@200&family=Roboto:wght@300&display=swap" rel="stylesheet">
     <script src = "https://kit.fontawesome.com/abe28ba608.js" crossorigin = "anonymous"></script>
     <script src = "typeEffectScript.js"></script>
+    <script src = "videoModal.js"></script>
+    <script src = "sendEmail.js"></script>
     <script src = "https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src = "https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src = "https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <!-- <script>
+        (function(){
+            emailjs.init(process.env.ZEE_USER_ID);
+        });
+    </script> -->
 </head>
 
 <body>
     <!-- Top Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a id = "navBarStyle" class = "navbar-brand" href = "index.html">Zeerak.A</a>
+    <nav id = "navColor" class="navbar navbar-expand-lg navbar-dark">
+        <a id = "navBarStyle" class = "navbar-brand" href = "index.html">Z.A</a>
         <button class = "navbar-toggler" type = "button" data-toggle = "collapse" data-target = "#navbarSupportedContent" aria-controls = "navbarSupportedContent" aria-expanded = "true" aria-label = "Toggle navigation">
           <span class = "navbar-toggler-icon"></span>
         </button>
@@ -43,10 +51,9 @@
                         <a id = "navLinkStyles" class = "nav-link" href = "#mainSStyle">My Skills</a>
                     </li>
 
-                    <!-- To Be Added Soon... -->
-                    <!-- <li class = "nav-item">
-                        <a id = "navLinkStyles" class = "nav-link" href = "#mainEStyle">Experience</a>
-                    </li> -->
+                    <li class = "nav-item">
+                        <a id = "navLinkStyles" class = "nav-link" href = "#mainEStyle">My Experience</a>
+                    </li>
                     
                     <li class = "nav-item">
                         <a id = "navLinkStyles" class = "nav-link" href = "#mainPStyle">My Projects</a>
@@ -78,47 +85,45 @@
     </nav>
     
     <!-- Main Body Container -->
-    <div class = "container-fluid bg-black text-white">
+    <div id = "mainContainer" class = "container-fluid text-white">
         <div id = "introContainer" class = "container-fluid">
             <!--Intro Portion-->
             <h1 id = "mainTStyle" class = "text-center"></h1><br>
             <p id = "introPara1" class = "text-center"></p>
             <p id = "introPara2" class = "text-center"></p>
-            <br><center><a id = "normalButton" href = "Zeerak's Software Resume (Year 3, Winter 2023).pdf" target = "_blank">Click Here to View Zeerak's Resume Here!</a></center>
+            <br><center><a id = "normalButton" href = "Zeerak's Software Resume (Year 3, Spring 2023).pdf" target = "_blank">Click Here to View Zeerak's Resume Here!</a>
+            <p id = "resume1" class = "text-center"></p><br>
+            <a id = "normalButton2" href = "Zeerak's Software Resume (Simple) (Year 3, Spring 2023).pdf" target = "_blank">Click Here to view the Simple Version of the Resume Here!</a>
+            <p id = "resume2" class = "text-center"></p></center>
         </div>
         
         <!-- About Me Container -->
-        <div class = "container-fluid">
+        <div id="aboutMeBG" class = "container-fluid">
             <div class = "row container-fluid text-center">
-                
                 <!-- About Me Text -->
                 <div class = "col container-fluid">
                     <div id = "aboutMeStyles" class = "container-fluid">
                         <h1 id = "mainHStyle" class = "text-center">About Me</h1>
-                        <p id = "aboutPara" class = "text-center">
-                            I am a 3rd year Computer Engineering student interested in software. 
-                            I currently attend Queen's University.
-                        </p>
+                        <p id = "aboutPara" class = "text-center"><b>My favorite hobbies as a student are playing video games, reading biographical books, programming web applications, 
+                            exploring different areas of software, and learning something new everyday.
+                        </b></p>
 
-                        <p id = "aboutPara" class = "text-center">I like programming web applications, algorithms, 
-                            and love exploring different areas of software.
-                        </p>
+                        <p id = "aboutPara" class = "text-center"><b>My passion for computers and software occurred when I was a toddler.
+                            I would turn my computer on and would browse the internet for games.
+                            I have always been curious about computers and how this various software were programmed and accessible through these man-made machines. 
+                        </b></p>
 
-                        <p id = "aboutPara" class = "text-center">My passion with computers and software occured when I was a toddler. I would turn my
-                            computer on and would browse the internet for games. I always had a curiosity about how, and what
-                            exactly are computers. How these various software were programmed and accessible through these man made machines. 
-                        </p>
-
-                        <p id = "aboutPara" class = "text-center">An interesting fact about me is that I was born in Melbourne, Australia and had moved to 
-                            Canada when I was three.
-                        </p>
+                        <p id = "aboutPara" class = "text-center"><b>An interesting fact about me is that I was born in Melbourne, Australia, and moved to Canada as a toddler. 
+                            <br>...<br>
+                            Yes, my parents told me I have seen kangaroos, but I don't remember seeing them.
+                        </b></p>
                     </div>
                 </div>
 
                 <!-- About Me Image -->
                 <div class = "col container-fluid">
                     <div class = "container-fluid text-center">
-                        <img id = "myImg" src = "zee_pfp_2022-2023.jpg" alt = "A Picture of me, Zeerak Asim."></img>
+                        <img id = "myImg" src = "zee_portfolio_pfp_Spring2023.jpg" alt = "A Picture of me, Zeerak Asim."></img>
                     </div>
                 </div>  
             </div>
@@ -126,111 +131,176 @@
 
         <!-- My Skills Container -->
         <div id = "mySkillsContainer" class = "container-fluid">
-            <h1 id = "mainSStyle" class = "text-center">My Skills</h1>
-
-            <div id = "devRowBorder" class = "row">
-                <div id = "devColBorder" class = "col-2">
-                    <i id = "mySkillsIcons" class = "fa-solid fa-code container-fluid text-center border-right-0"></i>
+            <h1 id = "mainSStyle" class = "container-fluid text-center">My Skills</h1>
+            <div class="row container-fluid">
+                <div class="col container-fluid">
+                    <div id = "skillCard" class = "card container-fluid">
+                        <div id = "skillCardHeadBG" class = "container-fluid">
+                            <i id = "mySkillsIcons" class = "fa-solid fa-code container-fluid"></i>
+                        </div>
+                        
+                        <div class="card-body container-fluid">
+                            <h5 id = "mySkillsParaH" class = "card-title text-white text-center"><i>Programming</i></h5>
+                            <p id = "mySkillsPara" class = "card-text text-white"><b>I can program in languages like:</b></p>
+                            <p id = "mySkillsPara" class = "card-text text-white">- Java, Python, C, C++, JavaScript</p>
+                            <p id = "mySkillsPara" class = "card-text text-white"><b>Construct or modify websites and web applications using:</b></p>
+                            <p id = "mySkillsPara" class = "card-text text-white">- Node.js, Express.js, HTML, Liquid, EJS, CSS, JavaScript, and other libraries</p>
+                            <p id = "mySkillsPara" class = "card-text text-white"><b>Implement a database using:</b></p>
+                            <p id = "mySkillsPara" class = "card-text text-white">- Apache, MariaDB, SQL or MongoDB</p>
+                            <p id = "mySkillsPara" class = "card-text text-white"><b>Implement a Python program that can perform web scraping using:</b></p>
+                            <p id = "mySkillsPara" class = "card-text text-white">- BeautifulSoup</p>
+                            <p id = "mySkillsPara" class = "card-text text-white"><b>I can program modules in Verilog to perform basic computations.</b></p>
+                            <p id = "mySkillsPara" class = "card-text text-white"><b>I can program scripts and algorithms for Arduino boards using Arduino IDE.</b></p>
+                        </div>
+                    </div>
                 </div>
+    
+                <div class="col container-fluid">
+                    <div id = "skillCard" class = "card container-fluid">
+                        <div id = "skillCardHeadBG" class = "container-fluid">
+                            <i id = "mySkillsIcons" class = "fa-solid fa-layer-group container-fluid"></i>
+                        </div>
 
-                <div class = "col-9">
-                    <b><p id = "mySkillsParaH">Programming</p></b>
-                    <p id = "mySkillsPara">I can proficiently:</p>
-                    <p id = "mySkillsPara">- Program in Java, Python, C, C++, JavaScript.</p>
-                    <p id = "mySkillsPara">- Implement data structures and algorithms in C or C++.</p>
-                    <p id = "mySkillsPara">- Implement a program using object orientated programming in Java.</p>
-                    <p id = "mySkillsPara">- Construct website and web applications using Node.js, Express.js, HTML, Liquid, EJS, CSS, JavaScript.</p>
-                    <p id = "mySkillsPara">- Implement a database using MongoDB.</p>
-                    <p id = "mySkillsPara">- Implement a python program that can perform web scraping using BeautifulSoup.</p>
+                        <div class = "card-body container-fluid">
+                            <h5 id = "mySkillsParaH" class = "card-title text-white text-center"><i>Frameworks</i></h5>
+                            <p id = "mySkillsPara" class = "card-text text-white"><b>I have used and am learning more about frameworks like:</b></p>
+                            <p id = "mySkillsPara" class = "card-text text-white">- Bootstrap</p>
+                            <p id = "mySkillsPara" class = "card-text text-white">- React</p>
+                            <p id = "mySkillsPara" class = "card-text text-white">- Express</p>
+                        </div>
+                    </div>
                 </div>
-            </div> 
-
-            <div id = "devRowBorder" class = "row">
-                <div id = "devColBorder" class = "col-2">
-                    <i id = "mySkillsIcons" class = "fa-solid fa-layer-group container-fluid text-center"></i>
-                </div>
-
-                <div class = "col-9">
-                    <b><p id = "mySkillsParaH">Frameworks</p></b>
-                    <p id = "mySkillsPara">I have previously used the following frameworks for development:</p>
-                    <p id = "mySkillsPara">- React</p>
-                    <p id = "mySkillsPara">- Express</p>
-                    <p id = "mySkillsPara">- Bootstrap</p>
-                </div>
-            </div>
-
-            <div id = "devRowBorder" class = "row">
-                <div id = "devColBorder" class = "col-2">
-                    <i id = "mySkillsIcons"  class="fa-solid fa-people-group container-fluid text-center"></i>
-                </div>
-
-                <div class = "col-9">
-                    <b><p id = "mySkillsParaH">Team Communication</p></b>
-                    <p id = "mySkillsPara">- I have worked in numerous teams throughout my time in highschool and my recent time in university.</p>
-                    <p id = "mySkillsPara">- I recently worked on a few Engineering modulous projects during my first and second year for Computer Engineering in Queen's University.</p>
-                    <p id = "mySkillsPara">- I have also worked as a sales associate at Best Buy Canada, where I experienced working with customers and a team.</p>    
+    
+                <div class="col container-fluid">
+                    <div id = "skillCard" class = "card container-fluid">
+                        <div id = "skillCardHeadBG" class = "container-fluid">
+                            <i id = "mySkillsIcons"  class="fa-solid fa-people-group container-fluid"></i>
+                        </div>
+                            <div class="card-body container-fluid">
+                                <h5 id = "mySkillsParaH" class = "card-title text-white text-center"><i>Team Communication</i></h5>
+                                <p id = "mySkillsPara" class = "card-text text-white">Communication, chemistry, strong optimism, and perseverance are critical to an effective, efficient, and productive team.
+                                    As someone who has worked in numerous groups from high school, my summer internship at Gunkii, to my third year at Queen's. 
+                                    I have worked with numerous types of teammates and have worked with different scenarios around common issues and scenarios that can arise in a team.
+                                    As engineering students, each year, we were given a team of students whom we most likely did not know.
+                                    This played a significant role as it encouraged me to adapt to new groups, to be flexible and confident, and always have an open mind to learning new skills, paths, and ideas from others.
+                                </p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <!-- To Be Added Soon... -->
-        <!-- Experience Container
-        <div id = "">
-           <h1 id = "mainEStyle" class = "text-center">Experience</h1>
-           <h1 id = "mainEPStyle">Experience</h1>
-        </div>     -->
+        <!-- Experience Container -->
+        <div id = "experienceContainer" class = "container-fluid text-center">
+            <h1 id = "mainEStyle" class = "container-fluid text-center">My Experience</h1>
+            <div id = "ExperienceCardContainer" class = "row container-fluid text-center">
+                <div id = "experienceCards" class = "card text-white border-black">
+                    <img src = "gunkii_shoppingcart_ui.png" class = "card-img-top" alt = "#">
+                    <div class = "card-body">
+                        <h5 class = "card-title"><b>Software Development Intern (Remote) @ Gunkii</b></h5>
+                        <h4 id = "card-subtitle" class = "card-title"><b>Vancouver, British Columbia, Canada</b></h4>
+                        <h4 id = "card-subtitle" class = "card-title"><b>July 2022 - September 2022</b></h4>
+                        <p id = "expText" class = "card-text">
+                            - Constructed a responsive UI shopping cart page using HTML, Liquid, and CSS.
+                        </p>
+                        <p id = "expText" class = "card-text">
+                            - Researched, suggested, and executed methods to optimize the website's speed by compressing images, and videos, reducing/deleting
+                            obsolete backend code.
+                        </p>
+                        <p id = "expText" class = "card-text">
+                            - Fixed bugs and maintained the website by solving video issues, scrolling animation bugs, and other issues that caused UI bugs on the website
+                            to prevent a bad user experience.
+                        </p>
+                        <p id = "expText" class = "card-text">
+                            - Integrated AfterPay to enable the BNPL feature for the products on the desktop website and the AMP site. It was accomplished using
+                            JavaScript, Shopify Themes, and ShopSheriff.
+                        </p>
+                        <p id = "expText" class = "card-text">
+                            - Contributed constructive ideas, helped and guided peers over merging issues on GitHub, website optimization articles, and constant
+                            updates/PowerPoints based on the changes done on the website during weekly sprints and meetings.
+                        </p>
+                    </div>
+                    <a href = "#" id = "videoDemoButton6" onclick = "openModal(6)">Video Demo</a>
+                </div>
+            </div>
+        </div>
 
         <!-- My Projects Container -->
         <div id = "projectContainer" class = "container-fluid text-center">
-            <h1 id = "mainPStyle" class = "text-center">My Projects</h1>
-            <h1 id = "mainPStyle" class = "text-center" style = "font-size: 1rem;">Click on each project image for a surprise, if your on mobile/tablet.</h1>
+            <h1 id = "mainPStyle" class = "container-fluid text-center">My Projects</h1>
+            <h1 id = "mainPStyle" class = "container-fluid text-center" style = "font-size: 1rem;">Hover over each project card for more information. 
+                If your on mobile/tablet, click on the project card.
+            </h1>
+            
             <div id = "projectCardContainer" class = "row container-fluid text-center">
-                <div id = "projectCards" class = "card bg-black text-white border-white" style = "width: 18rem;">
+                <div id = "projectCards" class = "card text-white border-black" style = "width: 18rem;">
                     <img src = "experimenting portfolio mockup 2021.png" class = "card-img-top" alt = "Picture of the beginning portion of the website.">
                     <div class = "card-body">
-                        <h5 class = "card-title">Experimental Portfolio Prototype</h5>
-                        <p id = "projText" class = "card-text">I created this website, using HTML and CSS. Overall probably one of the best I experimented with.</p>
+                        <h5 class = "card-title"><b>Experimental Portfolio</b></h5>
+                        <p id = "projText" class = "card-text"><b>A portfolio prototype programmed using HTML and CSS.</b></p>
                     </div>
-                    <a href = "https://github.com/hahazz4/Best_Website_I_Created" target="_blank" id = "normalCardButtons">Visit Repository</a>
-                    <a href = "https://hahazz4.github.io/Best_Website_I_Created" target="_blank" id = "normalCardButtons">Visit Website</a>
+                    <a href = "https://hahazz4.github.io/Best_Website_I_Created" target = "_blank" id = "normalCardButtons">Visit Website</a>
+                    <a href = "https://github.com/hahazz4/Best_Website_I_Created" target = "_blank" id = "normalCardButtons">Visit Repository</a>
                 </div>
 
-                <div id = "projectCards" class = "card bg-black text-white border-white" style = "width: 18rem;">
+                <div id = "projectCards" class = "card text-white border-black" style = "width: 18rem;">
                     <img src = "Todo List App.png" class = "card-img-top" alt = "Picture of the Todo List App.">
                     <div class = "card-body">
-                        <h5 class = "card-title">Todo List</h5>
-                        <p id = "projText"  class = "card-text">A simple todo list web app made with, HTML, CSS, Bootstrap and powered by JavaScript console.</p>
+                        <h5 class = "card-title"><b>Todo List</b></h5>
+                        <p id = "projText" class = "card-text"><b>A simple todo list web app made with, HTML, CSS, Bootstrap and powered by JavaScript console.</b></p>
                     </div>
-                    <a href = "https://github.com/hahazz4/Todo-List" target="_blank" id = "normalCardButtons">Visit Repository</a>
-                    <a href = "https://hahazz4.github.io/Todo-List" target="_blank" id = "normalCardButtons">Visit Website</a>
+                    <a href = "https://hahazz4.github.io/Todo-List" target = "_blank" id = "normalCardButtons">Visit Website</a>
+                    <a href = "https://github.com/hahazz4/Todo-List" target = "_blank" id = "normalCardButtons">Visit Repository</a>
                 </div>
 
-                <div id = "projectCards" class = "card bg-black text-white border-white" style = "width: 18rem;">
+                <div id = "projectCards" class = "card text-white border-black" style = "width: 18rem;">
                     <img src = "Temperature Sensor Prototype (Team 733-A).png" class = "card-img-top" alt = "Picture of a detailed diagram of the temperature sensor portion.">
                     <div class = "card-body">
-                        <h5 class = "card-title">QHDT Sensor APSC 103 Project</h5>
-                        <p id = "projText"  class = "card-text">Arduino script for pressure transducer and temperature sensor.</p>
+                        <h5 class = "card-title"><b>QHDT Sensor APSC 103 Project</b></h5>
+                        <p id = "projText" class = "card-text"><b>Arduino script for pressure transducer and temperature sensor.</b></p>
                     </div>
-                    <a href = "https://github.com/hahazz4/qhdt_sensors" target="_blank" id = "normalCardButtons">Visit Repository</a>
+                    <a href = "#" id = "videoDemoButton1" onclick = "openModal(1)">Video Demo</a>
+                    <a href = "https://github.com/hahazz4/qhdt_sensors" target = "_blank" id = "normalCardButtons">Visit Repository</a>
                 </div>
 
-                <div id = "projectCards" class = "card bg-black text-white border-white" style = "width: 18rem;">
+                <div id = "projectCards" class = "card text-white border-black" style = "width: 18rem;">
                     <img src = "FibonacciTermAlgoApp.png" class = "card-img-top" alt = "Picture of the GUI of the fibonacci term algorithm.">
                     <div class = "card-body">
-                        <h5 class = "card-title">Fibonacci Term App</h5>
-                        <p id = "projText"  class = "card-text">Fibonacci term algorithm programmed using Java. Finds the number when given the position of the term.</p>
+                        <h5 class = "card-title"><b>Fibonacci Term App</b></h5>
+                        <p id = "projText" class = "card-text"><b>Programmed using Java. Finds the number when given the position of the term for Fibonacci algorithm.</b></p>
                     </div>
-                    <a href = "https://github.com/hahazz4/fibonacci_term_gui" target="_blank" id = "normalCardButtons">Visit Repository</a>
+                    <a href = "#" id = "videoDemoButton2" onclick = "openModal(2)">Video Demo</a>
+                    <a href = "https://github.com/hahazz4/fibonacci_term_gui" target = "_blank" id = "normalCardButtons">Visit Repository</a>
                 </div>
-
-                <div id = "projectCards" class = "card bg-black text-white border-white" style = "width: 18rem;">
+                
+                <div id = "projectCards" class = "card text-white border-black" style = "width: 18rem;">
                     <img src = "weatherAppPic.png" class = "card-img-top" alt = "Picture of the weather app.">
                     <div class = "card-body">
-                        <h5 class = "card-title">Weather App</h5>
-                        <p id = "projText"  class = "card-text">A React.js app that allows you to search a country or city, display its temperature and weather condition using
-                        the OpenWeatherMap api.</p>
+                        <h5 class = "card-title"><b>Weather App</b></h5>
+                        <p id = "projText" class = "card-text"><b>A React.js app that allows you to search a country or city, display its temperature and weather condition using the OpenWeatherMap API.</b></p>
                     </div>
-                    <a href = "https://github.com/hahazz4/WeatherApp" target="_blank" id = "normalCardButtons">Visit Repository</a>
+                    <a href = "#" id = "videoDemoButton3" onclick = "openModal(3)">Video Demo</a>
+                    <a id = "normalCardButtons" href = "https://github.com/hahazz4/WeatherApp" target = "_blank">Visit Repository</a>
+                </div>
+
+                <div id = "projectCards" class = "card text-white border-black" style = "width: 18rem;">
+                    <img src = "RecipeHuntAppPic.png" class = "card-img-top" alt = "Picture of RecipeHunt's GUI.">
+                    <div class = "card-body">
+                        <h5 class = "card-title"><b>RecipeHunt App</b></h5>
+                        <p id = "projText" class = "card-text"><b>A Hack the 6ix (hackathon) team project that allows users to find recipes based on the ingredients that they have at home. The application will provide a list of recipes that use those ingredients.</b></p>
+                    </div>
+                    <a href = "#" id = "videoDemoButton4" onclick = "openModal(4)">Video Demo</a>
+                    <a id = "normalCardButtons" href = "https://github.com/Nickysterling/hack-the-6ix" target = "_blank">Visit Repository</a>
+                </div>
+
+                <div id = "projectCards" class = "card text-white border-black" style = "width: 18rem;">
+                    <img src = "CountryPediaAppPic.png" class = "card-img-top" alt = "Picture of CountryPedia's GUI.">
+                    <div class = "card-body">
+                        <h5 class = "card-title"><b>CountryPedia App</b></h5>
+                        <p id = "projText" class = "card-text"><b>A Hack the North (hackathon) team project that teaches and tests peoples knowledge of different country facts.</b></p>
+                    </div>
+                    <a href = "#" id = "videoDemoButton5" onclick = "openModal(5)">Video Demo</a>
+                    <a id = "normalCardButtons" href = "https://github.com/CipherDoc34/Hack-the-north" target = "_blank">Visit Repository</a>
                 </div>
 
                 <!-- To Be Added Soon... -->
@@ -244,20 +314,101 @@
                     </div>
                     <a href = "#" target="_blank" id = "normalCardButtons">Visit Repository</a>
                 </div> -->
+                
+                <!-- Gunkii Intern Exp Modal Container -->
+                <div id = "myModal6" class = "modal">
+                    <div class = "modal-content">
+                        <span class = "close">&times;</span>
+                        <video controls id = "demoVideo6">
+                            <source src = "gunkii_shopping_cart_demo.mp4" type = "video/mp4">
+                            Unfortunately your browser does not support the video tag. Please try with another browser or device (if on mobile).
+                        </video>
+                    </div>
+                </div>
+
+                <!-- QHDT Sensor Modal Container -->
+                <div id = "myModal1" class = "modal">
+                    <div class = "modal-content">
+                        <span class = "close">&times;</span>
+                        <video controls id = "demoVideo1">
+                            <source src = "qhdt_year1project_demo.mp4" type = "video/mp4">
+                            Unfortunately, your browser does not support the video tag. Please try with another browser or device (if on mobile).
+                        </video>
+                    </div>
+                </div>
+
+                <!-- Fibonacci Term Modal Container -->
+                <div id = "myModal2" class = "modal">
+                    <div class = "modal-content">
+                        <span class = "close">&times;</span>
+                        <video controls muted id = "demoVideo2">
+                            <source src = "fibonacci_term_finder_demo.mp4" type = "video/mp4">
+                            Unfortunately, your browser does not support the video tag. Please try with another browser or device (if on mobile).
+                        </video>
+                    </div>
+                </div>
+                
+                <!-- Weather App Modal Container -->
+                <div id = "myModal3" class = "modal">
+                    <div class = "modal-content">
+                        <span class = "close">&times;</span>
+                        <video controls muted id = "demoVideo3">
+                            <source src = "weather_app_demo.mp4" type = "video/mp4">
+                            Unfortunately your browser does not support the video tag. Please try with another browser or device (if on mobile).
+                        </video>
+                    </div>
+                </div>
+
+                <!-- RecipeHunt App Modal Container -->
+                <div id = "myModal4" class = "modal">
+                    <div class = "modal-content">
+                        <span class = "close">&times;</span>
+                        <video controls id = "demoVideo4">
+                            <source src = "recipehunt_app_hackathon_demo.mp4" type = "video/mp4">
+                            Unfortunately your browser does not support the video tag. Please try with another browser or device (if on mobile).
+                        </video>
+                    </div>
+                </div>
+
+                <!-- CountryPedia App Modal Container -->
+                <div id = "myModal5" class = "modal">
+                    <div class = "modal-content">
+                        <span class = "close">&times;</span>
+                        <video controls id = "demoVideo5">
+                            <source src = "countrypedia_app_demo.mp4" type = "video/mp4">
+                            Unfortunately your browser does not support the video tag. Please try with another browser or device (if on mobile).
+                        </video>
+                    </div>
+                </div>
+                  
+                <script src="videoModals.js"></script>
             </div>
         </div>
 
-        <!-- Contact Me Container -->
-        <div class = "container-fluid text-center">
-            <h1 id = "mainCStyle" class = "text-center">Contact Me</h1>
-            <p>Hey, you can feel free to reach out or ask any questions to me by clicking any of the buttons below.</p>
-            <a id = "normalButtonE" class = "btn" href = "mailto:Z_zee09@hotmail.com">Email</a></p>
-        </div>
+        <div id="bottomContainer" class="container-fluid">
+            <!-- Contact Me Container -->
+            <div class="container-fluid text-center">
+                <h1 id="mainCStyle" class="text-center">Contact Me</h1>
+                <p>Hey, you can feel free to reach out or ask any questions to me by filling out this form or clicking any of the buttons below in the footer section.</p>
+                <div id="contact_form_emailing" class="contact_form container-fluid">
+                    <form>
+                        <input required type = "text" name = "userName" placeholder = "Your Name">
+                        <input required type = "email" name = "userEmail" placeholder = "Your Email">
+                        <input type = "text" name = "subject" placeholder = "Email Subject">
+                        <textarea required name = "body" rows = "5" placeholder = "Enter your message here, once done, click the send message button below."></textarea>
+                        <button id = "normalButton" class = "btn" type = "button" onclick = "sendEmail()">Send Message</button>
+                    </form>
+                </div>
 
+                <b><p id = "status_message" class = "status_m container-fluid"></p></b>
+            </div>
+        </div>
+            
         <!-- Footer Container -->
         <div id = "footerStyle" class = "container-fluid text-center">
             <a id = "footer-linkL" class = "btn" href="https://www.linkedin.com/in/zeerak-asim-7a62101b9/" target="_blank">LinkedIn</a>
             <a id = "footer-linkG" class = "btn" href="https://github.com/hahazz4" target="_blank">Github</a>
+            <a id = "normalButtonE" class = "btn" href = "mailto:Z_zee09@hotmail.com">Email</a></p>
             <a id = "normalButton" class = "btn" href = "#navBarStyle">Back To Top ^</a>
             <br><br>
             <p>© 2023 | Zeerak Asim.</p>
