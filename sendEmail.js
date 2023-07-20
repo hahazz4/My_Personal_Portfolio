@@ -37,7 +37,7 @@ function sendEmail(){
     var subject = encodeURIComponent(document.getElementsByName('subject')[0].value);
     var body = encodeURIComponent(document.getElementsByName('body')[0].value);
 
-    var mailtoUrl = "mailto:Z_zee09@hotmail.com?subject=" + subject + "&body=" + body + "%0A%0AFrom%3A%20" + userName + "%0AEmail%3A%20" + userEmail;
+    var mailtoUrl = "mailto:asim.zeerak@gmail.com?subject=" + subject + "&body=" + body + "%0A%0AFrom%3A%20" + userName + "%0AEmail%3A%20" + userEmail;
 
     window.location.href = mailtoUrl;
 
