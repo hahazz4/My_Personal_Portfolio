@@ -30,8 +30,9 @@ html, body{
     transition: 0.25s;
 }
 
-#normalButton2{
-    font-family: 'Roboto', sans-serif;
+#resNormalButton{
+    display: none;
+    font-family: 'Roboto', sans-serif; 
     border-style: solid;
     border-color: white;
     padding: 0.5rem;
@@ -52,7 +53,7 @@ html, body{
     transition: 0.25s;
 }
 
-#normalButton2:hover{
+#resNormalButton:hover{
     font-family: 'Roboto', sans-serif; 
     border-style: solid;
     border-color: white;
@@ -1117,7 +1118,7 @@ html, body{
         transition: 0.25s;
     }
 
-    #normalButton2{
+    #resNormalButton{
         font-family: 'Roboto', sans-serif;
         font-size: 0.70rem;
         border-style: solid;

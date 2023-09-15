@@ -2,13 +2,11 @@ let i = 0;
 let j = 0;
 let k = 0;
 let l = 0;
-let m = 0;
 
 const message = "Hi my name is Zeerak Asim.";
-const message2 = "I am a third year Computer Engineering Student studying at Queen's University.";
-const message3 = "You can view my resume by clicking on any of the two buttons below, I wish you a good day!";
-const message4 = "Visual Version";
-const message5 = "Simple Version";
+const message2 = "I am a fourth year Computer Engineering Student studying at Queen's University.";
+const message3 = "You can view my resume by clicking the button below, I wish you a good day!";
+const message4 = "Up there ^";
 const speed = 50;
 
 function typeEffect() {
@@ -32,15 +30,14 @@ function typeEffect() {
 
     else if (l < message4.length){
         document.getElementById("resume1").innerHTML += message4.charAt(l);
-        l++;
+        l++;       
         setTimeout(typeEffect, speed);
     }
-
-    else if (m < message5.length){
-        document.getElementById("resume2").innerHTML += message5.charAt(m);
-        m++;
-        setTimeout(typeEffect, speed);
+    
+    else {
+        document.getElementById("resNormalButton").style.display = "block";
     }
+    
 }
 
 window.onload = function() {
