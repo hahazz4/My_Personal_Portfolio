@@ -7,7 +7,7 @@ const message = "Hi my name is Zeerak Asim.";
 const message2 = "I am a fourth year Computer Engineering Student studying at Queen's University.";
 const message3 = "You can view my resume by clicking the button below, I wish you a good day!";
 const message4 = "Up there ^";
-const speed = 50;
+const speed = 25;
 
 function typeEffect() {
     if (i < message.length){
