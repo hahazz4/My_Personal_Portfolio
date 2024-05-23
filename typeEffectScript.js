@@ -4,7 +4,7 @@ let k = 0;
 let l = 0;
 
 const message = "Hi my name is Zeerak Asim.";
-const message2 = "I am a fourth year Computer Engineering Student studying at Queen's University.";
+const message2 = "Recent Computer Engineering Graduate.";
 const message3 = "You can view my resume by clicking the button below, I wish you a good day!";
 const message4 = "Up there ^";
 const speed = 25;
